@@ -16,15 +16,15 @@ function Animal(nombre, genero) {
   //* Atributos
     this.nombre = nombre;
     this.genero = genero;
+}
 
-  //* Metodos agregados al prototipo de la función costructora
-  Animal.prototype.sonar = function() {
-    console.log("Hago sonidos porque estoy vivo");
-  }
+//* Metodos agregados al prototipo de la función costructora
+Animal.prototype.sonar = function() {
+console.log("Hago sonidos porque estoy vivo");
+}
 
-  Animal.prototype.saludar = function() {
-    console.log(`Hola me llamo ${this.nombre}`);
-  }
+Animal.prototype.saludar = function() {
+console.log(`Hola me llamo ${this.nombre}`);
 }
 
 const SNOPPY = new Animal("Snoopy", "Macho"), LolaBunny = new Animal ("Lola", "Hembra");
