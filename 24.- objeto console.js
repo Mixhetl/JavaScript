@@ -10,3 +10,29 @@ console.log("Un registro de lo que ha pasado en nuestra aplicación");
 let nombre = "Malquiel";
 let apellido= "Hernández";
 let edad = 35;
+
+console.log(edad,apellido,nombre);
+
+console.log(`Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años.`);
+
+console.log(`Hola mi nombre es %s %s y tengo %d años.`, nombre, apellido, edad);
+
+//Para limpiar la consola
+console.clear();
+
+console.log(window);
+console.log(document);
+
+//Muestra las caracteristicas de un objeto
+console.dir(window);
+console.dir(document);
+console.clear();
+
+console.group("Los cursos de @mixhetl en Youtube.");
+console.log("Curso de Javascript");
+console.log("Curso de CSS avanzado");
+console.log("Curso de NODE.js");
+console.log("Curso de HTML semantico avanzado.")
+console.log("Curso de React.js");
+console.log("Diseño de Interfaces");
+console.groupEnd();
